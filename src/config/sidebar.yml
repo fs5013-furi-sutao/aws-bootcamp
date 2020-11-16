@@ -1,0 +1,72 @@
+# Sidebar navigation
+
+- label: '学習の流れ'
+  link: '/' 
+- label: '全体像'
+  items:
+    - label: '1. 試験の概要を知っておく'
+      link: '/overview/exam-overview'
+- label: '模擬テスト 1 回目'
+  items:
+    - label: '2. 模擬試験をやってみる（難易度低）'
+      link: '/1st-trial/try-low-difficulty'
+    - label: '3. 模擬試験の答え合わせ'
+      link: '/1st-trial/check-answers-1st-trail'
+- label: 'キーワード学習 1 回目'
+  items:
+    - label: '4. 大事な学習方法を知る'
+      link: '/1st-learning-keywords/most-important-learning-ways'
+    - label: '5. 知らないワードをリストアップ'
+      link: '/1st-learning-keywords/make-list-unknown-keywords'
+    - label: '6. 覚えるべきワードをピックアップする'
+      link: '/1st-learning-keywords/make-list-keywords-to-remember'
+    - label: '7. 覚えるべきワードを調べる'
+      link: '/1st-learning-keywords/study-keywords-to-remember'
+- label: 'ドキュメント学習'
+  items:
+    - label: '8. デジタルコースを受講する'
+      link: '/study-with-docs/take-digital-course'
+    - label: '9. ホワイトペーパーを読む'
+      link: '/study-with-docs/read-white-papers'
+    - label: '10. AWS のサービス・特徴を学習する'
+      link: '/study-with-docs/learn-aws-services'
+- label: '再テスト: 模擬テスト 1 回目'
+  items:
+    - label: '11. 再テスト：模擬試験（難易度低）'
+      link: '/1st-retrial/retry-low-difficulty'
+    - label: '12. 模擬試験の答え合わせ'
+      link: '/1st-retrial/check-answers-retrial'
+- label: 'キーワード学習 2 回目'
+  items:
+    - label: '13. 分からないワードをリストアップ'
+      link: '/2nd-learning-keywords/make-list-keywords-you-dont-understand'
+    - label: '14. 分からないワードを調べる'
+      link: '/2nd-learning-keywords/study-unknown-keywords'
+- label: '模擬テスト 2 回目'
+  items:
+    - label: '15. 模擬試験をやってみる（難易度高）'
+      link: '/2nd-trial/try-high-difficulty'
+    - label: '16. 模擬試験（難易度高）の答え合わせ'
+      link: '/2nd-trial/check-answers-2nd-trail'
+- label: 'キーワード学習 3 回目'
+  items:
+    - label: '17. まだ理解不足のワードをリストアップ'
+      link: '/3rd-learning-keywords/make-list-keywords-you-still-cant-understand'
+    - label: '18. まだ理解不足のワードを調べる'
+      link: '/3rd-learning-keywords/study-misunderstanding-keywords'
+- label: '再テスト: 模擬テスト 2 回目'
+  items:
+    - label: '19. 再テスト：模擬試験（難易度高）'
+      link: '/2nd-retrial/retry-high-difficulty'
+    - label: '20. 模擬試験（難易度高）の答え合わせ'
+      link: '/2nd-retrial/check-answers-2nd-retrail'
+- label: More
+  items:
+    - label: FAQ
+      link: /faq
+    - label: Changelog
+      link: /changelog
+- label: Community
+  items:
+    - label: 'Github'
+      link: https://github.com/rocketseat/gatsby-themes
