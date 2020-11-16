@@ -62,9 +62,9 @@
       link: '/2nd-retrial/check-answers-2nd-retrail'
 - label: More
   items:
-    - label: FAQ
+    - label: 'よくある質問'
       link: /faq
-    - label: Changelog
+    - label: '変更履歴'
       link: /changelog
 - label: Community
   items:
