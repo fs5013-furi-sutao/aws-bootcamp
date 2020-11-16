@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-468394e92cdaf5d0a9a7.js"
+    "url": "webpack-runtime-fb4d4208c06de80cf5f6.js"
   },
   {
     "url": "framework-1bcdbcdd30f43763a25c.js"
@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "f0e45107-02a22ac72de90821f3f0.js"
   },
   {
-    "url": "app-3e3d30604eff28eb7f42.js"
+    "url": "app-92ad06212b6f0129f9db.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "c47f559d48387672656bc7146c25f692"
+    "revision": "daaa7934c0ae04fa1dcfc020bcc15d2d"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"
@@ -51,14 +51,14 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "cde4bba23fded07b16d102085ca45ba4"
+    "revision": "2f5b23dbf93a6e3a40da551ea706540b"
   },
   {
     "url": "polyfill-5204fa10d5950c3006a4.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "a62b44abfbcb6a6eb33e5f6a7ca5a4fa"
+    "revision": "1be7ae0bf5c325ccf5b403933ba89302"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -145,12 +145,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/aws-bootcamp`), ``)
+  pathname = pathname.replace(new RegExp(`^`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/aws-bootcamp/app-3e3d30604eff28eb7f42.js`))) {
+  if (!resources || !(await caches.match(`/app-92ad06212b6f0129f9db.js`))) {
     return await fetch(event.request)
   }
 
@@ -163,7 +163,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/aws-bootcamp/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
