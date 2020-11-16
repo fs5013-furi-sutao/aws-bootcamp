@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/aws-bootcamp`,
   siteMetadata: {
     siteTitle: `AWS Bootcamp`,
     defaultTitle: `AWS Bootcamp`,
