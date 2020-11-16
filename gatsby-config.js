@@ -5,7 +5,7 @@ module.exports = {
     defaultTitle: `AWS Bootcamp`,
     siteTitleShort: `AWS Bootcamp`,
     siteDescription: `65 時間で AWS の入門的な知識を手に入れる フリースタイル研修生用のプログラム`,
-    siteUrl: `https://rocketdocs.netlify.com`,
+    siteUrl: `https://fs5013-furi-sutao.github.io/aws-bootcamp/`,
     siteAuthor: `@rocketseat`,
     siteImage: `/banner.png`,
     siteLanguage: `ja`,
@@ -44,7 +44,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://rocketdocs.netlify.com`,
+        siteUrl: `https://fs5013-furi-sutao.github.io/aws-bootcamp/`,
       },
     },
     `gatsby-plugin-offline`,
