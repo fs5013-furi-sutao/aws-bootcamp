@@ -157,11 +157,13 @@ export default function GlobalStyle() {
 
         main {
           padding-left: 30px;
-          padding-right: 30px; 
+          padding-right: 30px;
+          padding-bottom: 80px;
         }
 
         aside {
           padding-right: 30px;
+          padding-bottom: 80px;
         }
 
         iframe {
@@ -329,28 +331,51 @@ export default function GlobalStyle() {
           background: #e8bd36;
         }
 
-        ::-webkit-scrollbar {
-          overflow: hidden;
-          width: 3px;
-          background: #fafafa;
+        aside {
+          ::-webkit-scrollbar {
+            overflow: hidden;
+            width: 3px;
+          }
+          ::-webkit-scrollbar:horizontal {
+            height: 1px;
+          }
+          ::-webkit-scrollbar-button {
+            display: none;
+          }
+          ::-webkit-scrollbar-piece {
+          }
+          ::-webkit-scrollbar-piece:start {
+          }
+          ::-webkit-scrollbar-thumb {
+          }
+          ::-webkit-scrollbar-corner {
+          }
         }
-        ::-webkit-scrollbar:horizontal {
-          height: 1px;
-        }
-        ::-webkit-scrollbar-button {
-          display: none;
-        }
-        ::-webkit-scrollbar-piece {
-          background: #eee;
-        }
-        ::-webkit-scrollbar-piece:start {
-          background: #eee;
-        }
-        ::-webkit-scrollbar-thumb {
-          background: #eee;
-        }
-        ::-webkit-scrollbar-corner {
-          background: #333;
+
+        aside:hover {
+          ::-webkit-scrollbar {
+            overflow: hidden;
+            width: 3px;
+            background: #fafafa;
+          }
+          ::-webkit-scrollbar:horizontal {
+            height: 1px;
+          }
+          ::-webkit-scrollbar-button {
+            display: none;
+          }
+          ::-webkit-scrollbar-piece {
+            background: #eee;
+          }
+          ::-webkit-scrollbar-piece:start {
+            background: #eee;
+          }
+          ::-webkit-scrollbar-thumb {
+            background: #ccc;
+          }
+          ::-webkit-scrollbar-corner {
+            background: #333;
+          }
         }
       `}
     />
