@@ -1,9 +1,9 @@
-import React from 'react';
-import { Global, css } from '@emotion/core';
-import { useTheme } from 'emotion-theming';
+import React from 'react'
+import { Global, css } from '@emotion/core'
+import { useTheme } from 'emotion-theming'
 
 export default function GlobalStyle() {
-  const theme = useTheme();
+  const theme = useTheme()
 
   return (
     <Global
@@ -153,6 +153,15 @@ export default function GlobalStyle() {
               font-weight: bold;
             }
           }
+        }
+
+        main {
+          padding-left: 30px;
+          padding-right: 30px; 
+        }
+
+        aside {
+          padding-right: 30px;
         }
 
         iframe {
@@ -319,7 +328,31 @@ export default function GlobalStyle() {
           content: 'flow';
           background: #e8bd36;
         }
+
+        ::-webkit-scrollbar {
+          overflow: hidden;
+          width: 3px;
+          background: #fafafa;
+        }
+        ::-webkit-scrollbar:horizontal {
+          height: 1px;
+        }
+        ::-webkit-scrollbar-button {
+          display: none;
+        }
+        ::-webkit-scrollbar-piece {
+          background: #eee;
+        }
+        ::-webkit-scrollbar-piece:start {
+          background: #eee;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: #eee;
+        }
+        ::-webkit-scrollbar-corner {
+          background: #333;
+        }
       `}
     />
-  );
+  )
 }
