@@ -6,6 +6,7 @@ export default {
     shape: `#F2F2FA`,
     title: `#3D3D4D`,
     text: `#6C6C80`,
-    link: `#318ce7`,
+    // link: `#318ce7`,#446ccf
+    link: `#5218fa`,
   },
 }
