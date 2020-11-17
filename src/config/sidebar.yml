@@ -34,7 +34,7 @@
   items:
     - label: '11. 再テスト：模擬試験（難易度低）'
       link: '/1st-retrial/retry-low-difficulty'
-    - label: '12. 模擬試験の答え合わせ'
+    - label: '12. 模擬試験（1 回目再テスト）の答え合わせ'
       link: '/1st-retrial/check-answers-retrial'
 - label: 'キーワード学習 2 回目'
   items:
