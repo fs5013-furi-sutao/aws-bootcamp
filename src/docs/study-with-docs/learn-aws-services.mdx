@@ -1,13 +1,128 @@
 ---
 title: AWS のサービス・特徴を学習する
-description: Learn how to create docs using Rocket Docs.
+description: AWS の各種サービスとそれぞれの特徴を押さえておく
 ---
 
-AWS にどういったサービスがあり、それぞれのサービスにはどういった特徴があるのかを以下のページの一覧を使って掴んでおく。
+AWS にどういったサービスがあり、それぞれのサービスにはどういった特徴があるのかを以下一覧で掴んでおく。
 
-AWS 認定クラウドプラクティショナー取得のために知っておくべきサービス  
-https://toronavi.com/aws-practitioner-service
-
-<br />
+サービスのイメージが掴めない場合は、サービス名をキーワード検索して、複数ページをざっくり読み、イメージや要点を掴む。
 
 ![AWS のサービス一覧](./aws-services.jpg)
+
+## コンピューティング
+
+| サービス                                                        | 概要                                                       |
+| :-------------------------------------------------------------- | :--------------------------------------------------------- |
+| [Amazon EC2](http://aws.amazon.com/jp/ec2/)                     | クラウド内で提供される仮想サーバ                           |
+| [AWS Lambda](http://aws.amazon.com/jp/lambda/)                  | サーバーのプロビジョニングや管理をすることなくコードを実行 |
+| [Elastic Beanstalk](http://aws.amazon.com/jp/elasticbeanstalk/) | ウェブアプリの実行と管理                                   |
+
+## コンテナ
+
+| サービス                                                    | 概要                                   |
+| :---------------------------------------------------------- | :------------------------------------- |
+| [Elastic Container Registry](http://aws.amazon.com/jp/ecr/) | コンテナイメージの保存、管理、デプロイ |
+| [Elastic Container Service](http://aws.amazon.com/jp/ecs/)  | スケーラブルなコンテナ実行方法         |
+
+## ストレージ
+
+| サービス                                                    | 概要                                 |
+| :---------------------------------------------------------- | :----------------------------------- |
+| [S3](http://aws.amazon.com/jp/s3/)                          | クラウド内のスケーラブルなストレージ |
+| [EFS](http://aws.amazon.com/jp/efs/)                        | EC2 のマネージド型ファイルストレージ |
+| [S3 Glacier](http://aws.amazon.com/jp/glacier/)             | クラウド内のアーカイブストレージ     |
+| [Storage Gateway](http://aws.amazon.com/jp/storagegateway/) | ハイブリッドストレージの統合         |
+| [EBS](http://aws.amazon.com/jp/ebs/)                        | EC2 のブロックストレージサービス     |
+
+## データベース
+
+| サービス                                              | 概要                                             |
+| :---------------------------------------------------- | :----------------------------------------------- |
+| [RDS](http://aws.amazon.com/jp/rds/)                  | マネージド型のリレーショナルデータベースサービス |
+| [DynamoDB](http://aws.amazon.com/jp/dynamodb/)        | マネージド型の NoSQL データベース                |
+| [ElastiCache](http://aws.amazon.com/jp/elasticache/)  | インメモリキャッシュ                             |
+| [Neptune](http://aws.amazon.com/jp/neptune/)          | マネージド型のグラフデータベース                 |
+| [Amazon Redshift](http://aws.amazon.com/jp/redshift/) | データウェアハウジング                           |
+
+## 移行と転送
+
+| サービス                                                | 概要                                 |
+| :------------------------------------------------------ | :----------------------------------- |
+| [Data Migration Service](http://aws.amazon.com/jp/dms/) | マネージド型データベース移行サービス |
+| [AWS Snowball](http://aws.amazon.com/jp/snowball/)      | ペタバイト規模のデータ転送           |
+| [AWS Snowmobile](http://aws.amazon.com/jp/snowmobile/)  | エクサバイト規模のデータ転送         |
+
+## ネットワーキングとコンテンツ配信
+
+| サービス                                                                 | 概要                                                                         |
+| :----------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
+| [VPC](http://aws.amazon.com/jp/vpc/)                                     | 独立したクラウドリソース                                                     |
+| [CloudFront](http://aws.amazon.com/jp/cloudfront/)                       | グローバルなコンテンツ配信ネットワーク（CDN）                                |
+| [Route 53](http://aws.amazon.com/jp/route53/)                            | スケーラブルなドメインネームシステム（DNS）                                  |
+| [Direct Connect](http://aws.amazon.com/jp/directconnect/)                | AWS への専用ネットワーク接続                                                 |
+| [Global Accelerator](http://aws.amazon.com/jp/global-accelerator/)       | 世界中のユーザーに提供するアプリケーションの可用性とパフォーマンスを改善する |
+| [Elastic Load Balancing](http://aws.amazon.com/jp/elasticloadbalancing/) | 複数のターゲットにわたる着信トラフィックの分配                               |
+
+## 開発者用ツール
+
+| サービス                                                | 概要                                                                 |
+| :------------------------------------------------------ | :------------------------------------------------------------------- |
+| [AWS CodeCommit](https://aws.amazon.com/jp/codecommit/) | プライベート Git リポジトリ内でのコードの保存                        |
+| [AWS CodeBuild]](https://aws.amazon.com/jp/codebuild/)  | 継続的スケーリングによるコードのビルドとテスト                       |
+| [AWS CodeDeploy](https://aws.amazon.com/jp/codedeploy/) | コードデプロイを自動化してアプリケーションのアップタイムを管理する   |
+| [CodePipline](https://aws.amazon.com/jp/codepipeline/)  | パイプラインの継続的デリバリーを自動化                               |
+| [AWS X-Ray](https://aws.amazon.com/jp/xray/)            | マイクロサービスなどの本番環境や分散アプリケーションの分析とデバッグ |
+
+## 管理とガバナンス
+
+| サービス                                                                               | 概要                                              |
+| :------------------------------------------------------------------------------------- | :------------------------------------------------ |
+| [AWS Organizations](http://aws.amazon.com/jp/organizations/)                           | AWS アカウント全体の一元管理                      |
+| [CloudWatch](http://aws.amazon.com/jp/cloudwatch/)                                     | リソースとアプリケーションのモニタリング          |
+| [AWS Auto Scaling](http://aws.amazon.com/jp/autoscaling/)                              | アプリケーション全体を迅速にスケーリング          |
+| [CoudFormation](http://aws.amazon.com/jp/cloudformation/)                              | テンプレートを使ったリソースの作成と管理          |
+| [CloudTrail](http://aws.amazon.com/jp/cloudtrail/)                                     | ユーザアクティビティと API 使用状況のトラッキング |
+| [Config](http://aws.amazon.com/jp/config/)                                             | リソースのインベントリと変更のトラッキング        |
+| [OpsWorks](http://aws.amazon.com/jp/opsworks/)                                         | Chef や Puppet を使って運用を自動化               |
+| [Systems Manager](http://aws.amazon.com/jp/systems-manager/)                           | AWS リソースを表示し管理する                      |
+| [Trusted Advisor](http://aws.amazon.com/jp/premiumsupport/technology/trusted-advisor/) | パフォーマンスとセキュリティの最適化              |
+
+## 分析
+
+| サービス                                    | 概要                                                   |
+| :------------------------------------------ | :----------------------------------------------------- |
+| [Athena](http://aws.amazon.com/jp/athena/)  | SQL を使用した S3 でのデータクエリ                     |
+| [Amazon EMR](http://aws.amazon.com/jp/emr/) | マネージド型の Hadoop などのビッグデータフレームワーク |
+
+## セキュリティ
+
+| サービス                                                | 概要                                                     |
+| :------------------------------------------------------ | :------------------------------------------------------- |
+| [IAM](http://aws.amazon.com/jp/iam/)                    | サービスとリソースへのアクセスを安全に管理               |
+| [Inspector](http://aws.amazon.com/jp/inspector/)        | アプリケーションのセキュリティの分析                     |
+| [Key Management Service](http://aws.amazon.com/jp/kms/) | マネージド型の暗号化キーの作成と管理                     |
+| [CloudHSM](http://aws.amazon.com/jp/cloudhsm/)          | コンプライアンスのためのハードウェアベースキーストレージ |
+| [WAF](http://aws.amazon.com/jp/waf/)                    | 悪意のあるウェブトラフィックのフィルタリング             |
+| [Shield](http://aws.amazon.com/jp/shield/)              | DDoS 保護                                                |
+| [Artifact](https://aws.amazon.com/jp/artifact/)         | AWS のコンプライアンスレポートへのオンデマンドアクセス   |
+
+## AWS コスト管理
+
+| サービス                                                                             | 概要                                         |
+| :----------------------------------------------------------------------------------- | :------------------------------------------- |
+| [AWS Cost Explorer](http://aws.amazon.com/jp/aws-cost-management/aws-cost-explorer/) | AWS のコストと使用状況を分析                 |
+| [AWS Budgets](http://aws.amazon.com/jp/aws-cost-management/aws-budgets/)             | カスタムコストと使用予算を設定               |
+| [AWS Marketplace](http://aws.amazon.com/jp/mp/migration/)                            | AWS で実行されるソフトウェア製品を検索、購入 |
+
+## アプリケーション統合
+
+| サービス                                                     | 概要                                   |
+| :----------------------------------------------------------- | :------------------------------------- |
+| [Simple Notification Service](http://aws.amazon.com/jp/sns/) | Pub/Sub のマネージドメッセージトピック |
+| [Simple Queue Service](http://aws.amazon.com/jp/sqs/)        | マネージド型メッセージキュー           |
+
+## その他
+
+| サービス                                                   | 概要                           |
+| :--------------------------------------------------------- | :----------------------------- |
+| [TCO 計算ツール](http://aws.amazon.com/jp/tco-calculator/) | AWS リソースのコストを見積もる |
